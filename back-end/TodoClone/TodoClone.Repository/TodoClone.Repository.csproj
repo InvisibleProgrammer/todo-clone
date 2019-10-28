@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TodoClone.Repository\TodoClone.Repository.csproj" />
+    <ProjectReference Include="..\TodoClone.Domain\TodoClone.Domain.csproj" />
   </ItemGroup>
 
 </Project>
