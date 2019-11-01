@@ -7,12 +7,9 @@ export default class LoginForm extends Component {
             email: '',
             password: ''
         };
-
-        this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleChange = this.handleChange.bind(this);
     }
 
-    handleChange(event) {
+    handleChange = (event) => {
         const value = event.target.value;
         const property = event.target.id;
 
@@ -22,7 +19,7 @@ export default class LoginForm extends Component {
         });
     }
 
-    handleSubmit(event) {
+    handleSubmit = (event) => {
         console.log(`login form submitted. Email: ${this.state.email}, password: ${this.state.password}`);
         event.preventDefault();
     }
