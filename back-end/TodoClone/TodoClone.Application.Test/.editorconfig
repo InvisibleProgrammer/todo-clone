@@ -1,4 +1,0 @@
-﻿[*.cs]
-
-# CRRSP01: A misspelled word has been found
-dotnet_diagnostic.CRRSP01.severity = none
