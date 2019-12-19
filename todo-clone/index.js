@@ -13,8 +13,8 @@ app.get('/', (req, res) => {
     res.send('Hello World!');
 });
 
-app.post('/login', urlEncodedParser, (req, res) => {
-    res.send('welcome, ') + req.body.userName;
+app.post('/login', jsonParser, function(req, res) {
+    res.send(`Welcome, ${req.body.userName}`);
 });
 
 app.listen(port, () => {
